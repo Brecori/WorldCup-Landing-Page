@@ -19,7 +19,11 @@
 }
 
 .creamBg {
-    background-color: #EFEEE6;
+    background: radial-gradient(circle, rgba(239,238,230,1) 0%, rgba(204,203,196,1) 50%); background-color: #EFEEE6;
+}
+
+.creamBg2 {
+    background-color: var(--cream);
 }
 
 .frontBg {
@@ -35,6 +39,18 @@ body {
     color: var(--frontColor) !important;
     font-size: 20px !important;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+}
+
+.textShadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+}
+
+.boxShadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+}
+
+.boxShadowTop {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.253);
 }
 
 
@@ -73,6 +89,8 @@ body {
     transition: transform 0.25s ease-out;
 }
 
+
+
 .spanone:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -82,7 +100,34 @@ body {
     height: 10px !important;
     width: 10px !important;
     border-radius: 100%;  /* add border-radius */
-   
+    color: #60122f !important;
+    background-color: #60122f !important;
 }
+
+.glass {
+    /* From https://css.glass */
+background: rgba(239, 238, 230, 0.35);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.7px);
+-webkit-backdrop-filter: blur(9.7px);
+border: 1px solid rgba(239, 238, 230, 0.32);
+}
+
+.dividerLine {
+    width: 100%;
+    background-color: white;
+    height: 1px;
+}
+
+.bRadius {
+    border-radius: 30px;
+}
+
+.bRadiusCarousel {
+    border-radius: 70px;
+}
+
+
 
 
